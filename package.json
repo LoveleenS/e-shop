@@ -1,0 +1,15 @@
+{
+  "name": "project5",
+  "version": "0.0.0",
+  "description": "Shopping cart",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Loveleen",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "jade": "~1.3.1",
+    "express": "~3.4.4"
+  }
+}
