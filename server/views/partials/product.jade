@@ -1,0 +1,17 @@
+block main-content
+	.container
+		.well
+			ul
+				each val in [1,2,3]
+					li=val
+		.well
+			h1 {{product.name}}	{{product.name}}:{{product.description}}
+			.row(class="panel panel-default" ng-repeat="(nutrientName,nutrientValue) in product.nutrients")	{{nutrientName}}{{nutrientValue}}
+			.row(class="panel")
+				a(href="" class="btn btn-default" ng-click="cart.addItem(product.sku,product.name,product.price,1)") Add to cart
+				a(href="" class="btn btn-default" ng-click="cart.addItem(product.sku, product.name, product.price, -1)"
+                ng-disabled="cart.getTotalCount(product.sku) < 1") Remove from cart
+				a(href="" class="btn btn-default" ng-click="") back to store
+
+
+

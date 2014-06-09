@@ -1,0 +1,17 @@
+block main-content
+	.container
+		p Welcome to the online store , choose the products you like
+			.row 
+				.well goto shopping cart to complete your shopping 
+					a(href="#/cart" ng-disabled="cart.getTotalCount()<1") here
+				.well
+					.span {{cart.getTotalCount()}} items, {{cart.getTotalPrice()|currency}}
+		
+			.row(class="panel panel-default" ng-repeat="product in store.products | orderBy:'name'")
+				.col-md-6 {{product.name}}
+					img(class="thumbnail" ng-src='/img/products/{{product.sku}}.jpg' type="image/jpeg" alt="{{product.name}}")
+					a(href="#/products/{{product.sku}}") {{product.name}}
+					p {{product.description}}
+				.col-md-3p {{product.price|currency}} {{cart.getTotalCount(product.sku)}} items added
+				.col-md-3(class="btn_location")
+					a(href="" class="btn btn-default" ng-click="cart.addItem(product.sku,product.name,product.price,1)") Add to cart
