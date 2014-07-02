@@ -1,8 +1,8 @@
 block main-content
 	.container
 		.well
-			h2 {{product.name}}	
-			 {{product.description}}
+			h2 {{product.name}}
+			{{product.description}}
 			.row(class="panel panel-default panel-wid" ng-repeat="(nutrientName, nutrientValue) in product.nutrients") {{nutrientName}} content : {{nutrientValue}}
 			.row(class="")
 				a(href="" class="btn btn-success" ng-click="cart.addItem(product.sku,product.name,product.price,1)") Add to cart
