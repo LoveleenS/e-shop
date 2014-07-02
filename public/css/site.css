@@ -1,0 +1,27 @@
+body {
+  padding-top: 40px;
+  background-color: #cf9;
+}
+img {
+  width: 101px;
+  height: 103px;
+}
+.row {
+  margin-left: 0px;
+}
+.btn_location {
+  margin-top: 20px;
+}
+.jumbotron {
+  background-color: #060;
+  color: #ff0;
+  padding-top: 10px;
+}
+padding-bottom 10px,
+.banner-label {
+  float: left;
+  font-style: italic;
+}
+.banner-img {
+  float: right;
+}

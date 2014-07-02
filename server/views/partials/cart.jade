@@ -1,0 +1,12 @@
+block main-content
+	.container
+		p Thank you for shopping, here you can edit your shopping list if you want or go back if you want to add more items.
+			.row 
+				.well
+					.div(ng-repeat="item in cart.items") Name: {{item.name}} Price: {{item.price*item.quantity|currency}} 
+							a(href="" class="btn btn-success" ng-click='cart.addItem(item.sku,item.name,item.price,1)')	+
+							a(href="" class="btn btn-danger" ng-click="cart.addItem(item.sku, item.name, item.price,-1)")	-
+					.span Total Count {{cart.getTotalCount()}} items, Total Price {{cart.getTotalPrice()|currency}}
+				.row(class="")
+					a(href="#/store" class="btn btn-warning" ng-click="#/store") back to store
+					a(href="#/store" class="btn btn-info" ng-click="#/store") Checkout (TBD)

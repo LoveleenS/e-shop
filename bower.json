@@ -1,0 +1,25 @@
+{
+  "name": "project5",
+  "version": "0.0.0",
+  "authors": [
+    "LoveleenS <loveleensidhu@gmail.com>"
+  ],
+  "description": "shopping cart",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "AngularJS-Toaster": "~0.4.7",
+    "angular": "~1.2.16",
+    "angular-resource": "~1.2.16",
+    "angular-route": "~1.2.16",
+    "bootstrap": "~3.1.1"
+  }
+}

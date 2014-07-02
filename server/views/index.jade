@@ -1,0 +1,13 @@
+extends ../includes/layout
+
+block main-content
+	.container
+		.navbar.navbar-default(role='navigation')
+			.container
+				a.navbar-header(href='/') Login
+		.jumbotron
+			h2 Online Wellbeing store
+			p Welcome to the store , choose the products you like
+			img( src='/img/uploadeddd.jpg' type='image/jpeg')
+	section.content
+	div(ng-view)
