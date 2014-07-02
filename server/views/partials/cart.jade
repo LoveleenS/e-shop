@@ -7,6 +7,11 @@ block main-content
 							a(href="" class="btn btn-success" ng-click='cart.addItem(item.sku,item.name,item.price,1)')	+
 							a(href="" class="btn btn-danger" ng-click="cart.addItem(item.sku, item.name, item.price,-1)")	-
 					.span Total Count {{cart.getTotalCount()}} items, Total Price {{cart.getTotalPrice()|currency}}
+<<<<<<< HEAD
 				.row(class="")
 					a(href="#/store" class="btn btn-warning" ng-click="#/store") back to store
 					a(href="#/store" class="btn btn-info" ng-click="#/store") Checkout (TBD)
+=======
+				.row(class="panel")
+					a(href="#/store" class="btn btn-default" ng-click="#/store") back to store
+>>>>>>> 35e8bc66f719876cd6bf97c45f0597ddb3a8bf06

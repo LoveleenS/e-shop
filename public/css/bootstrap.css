@@ -4364,7 +4364,11 @@ a.list-group-item.active > .badge,
 .nav-pills > li > a > .badge {
   margin-left: 3px;
 }
+<<<<<<< HEAD
 .text {
+=======
+.jumbotron {
+>>>>>>> 35e8bc66f719876cd6bf97c45f0597ddb3a8bf06
   padding: 30px;
   margin-bottom: 30px;
   color: inherit;

@@ -1,6 +1,7 @@
 block main-content
 	.container
 		.well
+<<<<<<< HEAD
 			h2 {{product.name}}
 			{{product.description}}
 			.row(class="panel panel-default panel-wid" ng-repeat="(nutrientName, nutrientValue) in product.nutrients") {{nutrientName}} content : {{nutrientValue}}
@@ -9,6 +10,19 @@ block main-content
 				a(href="" class="btn btn-danger" ng-click="cart.addItem(product.sku, product.name, product.price, -1)"
                 ng-disabled="cart.getTotalCount(product.sku) < 1") Remove from cart
 				a(href="#/store" class="btn btn-warning" ng-click="#/store") back to store
+=======
+			ul
+				each val in [1,2,3]
+					li=val
+		.well
+			h1 {{product.name}}	{{product.name}}:{{product.description}}
+			.row(class="panel panel-default" ng-repeat="(nutrientName,nutrientValue) in product.nutrients")	{{nutrientName}}{{nutrientValue}}
+			.row(class="panel")
+				a(href="" class="btn btn-default" ng-click="cart.addItem(product.sku,product.name,product.price,1)") Add to cart
+				a(href="" class="btn btn-default" ng-click="cart.addItem(product.sku, product.name, product.price, -1)"
+                ng-disabled="cart.getTotalCount(product.sku) < 1") Remove from cart
+				a(href="" class="btn btn-default" ng-click="") back to store
+>>>>>>> 35e8bc66f719876cd6bf97c45f0597ddb3a8bf06
 
 
 

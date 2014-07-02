@@ -8,11 +8,19 @@ angular.module('app').factory('DataService',function(){
 	function store() {
 		console.log('inside store() method');
 	  this.products = [
+<<<<<<< HEAD
 	    new product("APL", "Apple", "Eat one every day and keep doctor away !!", 12, 90, 0, 2, 0, 1, 2),
 	    new product("PCH", "Peach", "Wonderfully delicious peaches are low in calories(39 calories in 100 g) and contain no saturated fats. Nonetheless, they are packed with numerous health promoting compounds, minerals and vitamins", 16, 90, 0, 1, 1, 1, 2),
 	    new product("BAN", "Banana", "These are powerhouse of energy and full of potassium", 4, 120, 0, 2, 1, 2, 2),
 	    // more products…
 	    new product("WML", "Watermelon", "Nothing is as refreshing as a watermelon of a hot sunny day", 4, 90, 4, 4, 0, 1, 1)
+=======
+	    new product("APL", "Apple", "Eat one every…", 12, 90, 0, 2, 0, 1, 2),
+	    new product("PCH", "Avocado", "Guacamole…", 16, 90, 0, 1, 1, 1, 2),
+	    new product("BAN", "Banana", "These are…", 4, 120, 0, 2, 1, 2, 2),
+	    // more products…
+	    new product("WML", "Watermelon", "Nothing…", 4, 90, 4, 4, 0, 1, 1)
+>>>>>>> 35e8bc66f719876cd6bf97c45f0597ddb3a8bf06
 	  ];
 	  this.dvaCaption = ["Negligible", "Low", "Average", "Good", "Great" ];
 	  this.dvaRange = ["below 5%", "between 5 and 10%","above 40%"];

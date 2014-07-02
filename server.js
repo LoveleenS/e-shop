@@ -31,4 +31,8 @@ app.get('*',function(req,res){
 });
 
 var port = 8005;
+<<<<<<< HEAD
 app.listen(process.env.PORT || port);
+=======
+app.listen(port);
+>>>>>>> 35e8bc66f719876cd6bf97c45f0597ddb3a8bf06

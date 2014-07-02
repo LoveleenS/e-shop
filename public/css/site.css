@@ -1,6 +1,10 @@
 body {
+<<<<<<< HEAD
   padding-top: 40px;
   background-color: #cf9;
+=======
+  padding-top: 100px;
+>>>>>>> 35e8bc66f719876cd6bf97c45f0597ddb3a8bf06
 }
 img {
   width: 101px;
@@ -12,6 +16,7 @@ img {
 .btn_location {
   margin-top: 20px;
 }
+<<<<<<< HEAD
 .jumbotron {
   background-color: #060;
   color: #ff0;
@@ -25,3 +30,5 @@ padding-bottom 10px,
 .banner-img {
   float: right;
 }
+=======
+>>>>>>> 35e8bc66f719876cd6bf97c45f0597ddb3a8bf06
